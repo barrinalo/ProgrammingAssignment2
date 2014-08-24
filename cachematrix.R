@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Some functions to handle matrices
 
-## Write a short comment describing this function
+
+## function which creates a variable to store a matrix and its inverse
+## along with the get/set functions to interact with this object
 
 makeCacheMatrix <- function(x = matrix()) {
   invm <- NULL
@@ -18,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Checks if the inverse of the given matrix is cached
+## if not recalculate
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
